@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Meu Site Elaborado</title>
+  <script>
+    function toggleSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      var sections = document.querySelectorAll("section");
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i] !== section) {
+          sections[i].style.display = "none";
+        }
+      }
+      if (section.style.display === "none" || section.style.display === "") {
+        section.style.display = "block";
+      } else {
+        section.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>ISAC BARONI</h1>
+  </header>
+  <nav>
+    <div class="button-container">
+      <button class="nav-button" onclick="toggleSection('start-page')">Start Page</button>
+      <button class="nav-button" onclick="toggleSection('sobre')">Sobre</button>
+      <button class="nav-button" onclick="toggleSection('job')">Job</button>
+      <button class="nav-button" onclick="toggleSection('contato')">Contato</button>
+    </div>
+  </nav>
+  <main>
+    <section id="sobre" style="display: none;">
+
+      Eu sou um profissional dedicado e apaixonado no campo da tecnologia e desenvolvimento.
+
+      Em 2020, concluí meu curso de Mecatrônica, que me proporcionou uma base em engenharia e automação.
+      
+      Em 2019, participei de um curso profissionalizante que ampliou minha perspectiva e me proporcionou habilidades valiosas.
+      
+      Em 2022, iniciei minha jornada na área ao começar minha graduação em Análise e Desenvolvimento de Sistemas (ADS), solidificando meu conhecimento em programação e sistemas.
+
+    </section>
+    <section id="job" style="display: none;">
+      <h2>Job</h2>
+      <div class="button-container">
+        <button class="job-button" onclick="toggleSection('web-design')">Web Design</button>
+        <button class="job-button" onclick="toggleSection('desenvolvimento-front')">Desenvolvimento Front-end</button>
+        <button class="job-button" onclick="toggleSection('desenvolvimento-back')">Desenvolvimento Back-end</button>
+      </div>
+    </section>
+    <section id="web-design" style="display: none;">
+      O layout do site é a disposição das informações, imagens e elementos na página. Uma estrutura bem organizada facilita a navegação e a compreensão do conteúdo pelo usuário.
+
+      Um bom web design se preocupa em oferecer uma ótima experiência para os visitantes do site. Isso envolve tornar a navegação intuitiva, garantir que as informações sejam acessíveis e fáceis de encontrar, além de proporcionar um design responsivo que se adapte a diferentes dispositivos, como smartphones e tablets.
+      
+      O web design também está ligado à identidade visual da marca ou empresa. Isso inclui a escolha de cores, tipografia e elementos visuais que refletem a personalidade da marca e criam uma conexão emocional com o público.
+      
+      Com o aumento do uso de dispositivos móveis para acessar a internet, o design responsivo se tornou fundamental. Isso significa criar um site que se ajusta automaticamente ao tamanho da tela, proporcionando uma experiência consistente e agradável em todos os dispositivos.
+      
+      O uso de imagens, gráficos, vídeos e outros elementos multimídia pode enriquecer a experiência do usuário e transmitir informações de maneira visualmente atraente.
+      
+      Um design acessível considera a inclusão de todos os tipos de usuários, incluindo aqueles com deficiências. Isso envolve garantir que o site seja navegável por pessoas com diferentes necessidades e dispositivos de acesso.
+      
+      O campo do web design está sempre evoluindo, com novas tendências e tecnologias emergindo regularmente. Manter-se atualizado com as últimas práticas e inovações é importante para criar sites modernos e atraentes.
+      
+      Os web designers utilizam uma variedade de ferramentas e tecnologias, incluindo linguagens de marcação (HTML, CSS), frameworks de design, softwares de edição de imagens e até mesmo ferramentas de prototipagem para planejar a estrutura do site.
+    </section>
+    <section id="desenvolvimento-front" style="display: none;">
+     <p> O Desenvolvimento Front-end é a parte do processo de construção de um site que se concentra na criação da interface visível para os usuários. Envolve a implementação de elementos visuais e interativos, bem como a otimização da experiência do usuário.
+
+     Os desenvolvedores front-end utilizam linguagens como HTML (Hypertext Markup Language) para estruturar o conteúdo, CSS (Cascading Style Sheets) para estilizar a aparência e JavaScript para adicionar interatividade e funcionalidades.
+
+     Além disso, os desenvolvedores front-end também se preocupam com a responsividade do site, garantindo que ele seja exibido de forma adequada em diferentes dispositivos, tamanhos de tela e orientações.
+
+     A colaboração entre designers e desenvolvedores front-end é fundamental para garantir que o design seja fielmente implementado e que a interface seja agradável e funcional.
+
+     Frameworks e bibliotecas como Bootstrap, React, Angular e Vue.js são frequentemente usados no desenvolvimento front-end para agilizar o processo e oferecer recursos avançados.
+
+     Em resumo, o desenvolvimento front-end é responsável por trazer à vida o design visual de um site e torná-lo interativo e amigável para os usuários.</p>
+    </section>
+    <section id="desenvolvimento-back" style="display: none;">
+      <p>O Desenvolvimento Back-end é responsável por construir a parte do site que não é visível aos usuários, mas que desempenha um papel fundamental na funcionalidade do site. Envolve a criação e gerenciamento do servidor, banco de dados e lógica de negócios.</p>
+      <p>Os desenvolvedores back-end utilizam linguagens de programação como PHP, Python, Ruby, Java, Node.js e outras para criar as funcionalidades do site. Eles lidam com o processamento de dados, autenticação de usuários, gerenciamento de sessões, segurança e muito mais.</p>
+      <p>Além disso, os desenvolvedores back-end trabalham com bancos de dados para armazenar e gerenciar informações. Eles projetam esquemas de banco de dados, criam consultas para recuperar e atualizar dados e garantem a integridade dos dados armazenados.</p>
+      <p>A colaboração entre desenvolvedores back-end e front-end é crucial para garantir que a interface do usuário se conecte perfeitamente às funcionalidades do back-end.</p>
+      <p>Frameworks back-end, como Express.js (para Node.js), Django (para Python) e Ruby on Rails (para Ruby), agilizam o processo de desenvolvimento, fornecendo estruturas e ferramentas para criar aplicativos web robustos e eficientes.</p>
+      <p>Em resumo, o desenvolvimento back-end é responsável por criar a estrutura e a funcionalidade do site, permitindo que os usuários interajam com o conteúdo e os recursos de maneira eficaz e segura.</p>
+      
+    </section>
+    <section id="contato" style="display: none;">
+        <p>e-mail: isac.bbazzani@gmail.com</p>
+      <p> Whatzapp: (19) 99418-2037</p>
+      <p> linkdin: https://www.linkedin.com/in/isac-narcizo-baroni-bazzani-3624b4212/ </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Todos os direitos reservados para eu .</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
